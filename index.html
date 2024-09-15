@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+        <!-- header -->
+        <header class="header">
+          <div class="top-socialbar-wrapper">
+          <div class="container">
+            <div class="top-social-bar">
+
+              <ul>
+                <li class="d-none d-md-block">
+                  <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                    Mon - Fri: 09.00am - 10.00pm
+                  </a>
+                </li>
+                <li> 
+                  <a href="tel:+92 315667809">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                    <span class="d-none d-sm-inline-block">+92 315667809</span>
+                  </a>
+
+              </li>
+              </ul>
+              <ul>
+                <li> <a href="">
+                  <svg class="fb-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                </a></li>
+                <li><a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a></li>
+                <li><a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"/></svg></a></li>
+                
+                <li><a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M496.9 366.6c-3.4-9.2-9.8-14.1-17.1-18.2-1.4-.8-2.6-1.5-3.7-1.9-2.2-1.1-4.4-2.2-6.6-3.4-22.8-12.1-40.6-27.3-53-45.4a102.9 102.9 0 0 1 -9.1-16.1c-1.1-3-1-4.7-.2-6.3a10.2 10.2 0 0 1 2.9-3c3.9-2.6 8-5.2 10.7-7 4.9-3.2 8.8-5.7 11.2-7.4 9.4-6.5 15.9-13.5 20-21.3a42.4 42.4 0 0 0 2.1-35.2c-6.2-16.3-21.6-26.4-40.3-26.4a55.5 55.5 0 0 0 -11.7 1.2c-1 .2-2.1 .5-3.1 .7 .2-11.2-.1-22.9-1.1-34.5-3.5-40.8-17.8-62.1-32.7-79.2A130.2 130.2 0 0 0 332.1 36.4C309.5 23.5 283.9 17 256 17S202.6 23.5 180 36.4a129.7 129.7 0 0 0 -33.3 26.8c-14.9 17-29.2 38.4-32.7 79.2-1 11.6-1.2 23.4-1.1 34.5-1-.3-2-.5-3.1-.7a55.5 55.5 0 0 0 -11.7-1.2c-18.7 0-34.1 10.1-40.3 26.4a42.4 42.4 0 0 0 2 35.2c4.1 7.8 10.7 14.7 20 21.3 2.5 1.7 6.4 4.2 11.2 7.4 2.6 1.7 6.5 4.2 10.3 6.7a11.1 11.1 0 0 1 3.3 3.3c.8 1.6 .8 3.4-.4 6.6a102 102 0 0 1 -8.9 15.8c-12.1 17.7-29.4 32.6-51.4 44.6C32.4 348.6 20.2 352.8 15.1 366.7c-3.9 10.5-1.3 22.5 8.5 32.6a49.1 49.1 0 0 0 12.4 9.4 134.3 134.3 0 0 0 30.3 12.1 20 20 0 0 1 6.1 2.7c3.6 3.1 3.1 7.9 7.8 14.8a34.5 34.5 0 0 0 9 9.1c10 6.9 21.3 7.4 33.2 7.8 10.8 .4 23 .9 36.9 5.5 5.8 1.9 11.8 5.6 18.7 9.9C194.8 481 217.7 495 256 495s61.3-14.1 78.1-24.4c6.9-4.2 12.9-7.9 18.5-9.8 13.9-4.6 26.2-5.1 36.9-5.5 11.9-.5 23.2-.9 33.2-7.8a34.6 34.6 0 0 0 10.2-11.2c3.4-5.8 3.3-9.9 6.6-12.8a19 19 0 0 1 5.8-2.6A134.9 134.9 0 0 0 476 408.7a48.3 48.3 0 0 0 13-10.2l.1-.1C498.4 388.5 500.7 376.9 496.9 366.6zm-34 18.3c-20.7 11.5-34.5 10.2-45.3 17.1-9.1 5.9-3.7 18.5-10.3 23.1-8.1 5.6-32.2-.4-63.2 9.9-25.6 8.5-42 32.8-88 32.8s-62-24.3-88.1-32.9c-31-10.3-55.1-4.2-63.2-9.9-6.6-4.6-1.2-17.2-10.3-23.1-10.7-6.9-24.5-5.7-45.3-17.1-13.2-7.3-5.7-11.8-1.3-13.9 75.1-36.4 87.1-92.6 87.7-96.7 .6-5 1.4-9-4.2-14.1-5.4-5-29.2-19.7-35.8-24.3-10.9-7.6-15.7-15.3-12.2-24.6 2.5-6.5 8.5-8.9 14.9-8.9a27.6 27.6 0 0 1 6 .7c12 2.6 23.7 8.6 30.4 10.2a10.7 10.7 0 0 0 2.5 .3c3.6 0 4.9-1.8 4.6-5.9-.8-13.1-2.6-38.7-.6-62.6 2.8-32.9 13.4-49.2 26-63.6 6.1-6.9 34.5-37 88.9-37s82.9 29.9 88.9 36.8c12.6 14.4 23.2 30.7 26 63.6 2.1 23.9 .3 49.5-.6 62.6-.3 4.3 1 5.9 4.6 5.9a10.6 10.6 0 0 0 2.5-.3c6.7-1.6 18.4-7.6 30.4-10.2a27.6 27.6 0 0 1 6-.7c6.4 0 12.4 2.5 14.9 8.9 3.5 9.4-1.2 17-12.2 24.6-6.6 4.6-30.4 19.3-35.8 24.3-5.6 5.1-4.8 9.1-4.2 14.1 .5 4.2 12.5 60.4 87.7 96.7C468.6 373 476.1 377.5 462.9 384.9z"/></svg>
+                </a></li>
+                <li><a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                </a></li>
+               
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-navbar-wrapper">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-theme-primary" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75l-8.7 0-32 0-96 0c-35.3 0-64 28.7-64 64l0 96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-128 8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-147.6c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4L480 32zm-64 76.7L416 240l0 131.3C357.2 317.8 280.5 288 200.7 288l-8.7 0 0-96 8.7 0c79.8 0 156.5-29.8 215.3-83.3z"/></svg>
+                      <span class="ms-2">Get A Qoute</span>
+                    </a>
+                  </li>
+                </ul>
+
+
+                
+              </div>
+            </div>
+          </nav>
+        </div>
+        </header>
+        <div class="main-carousel-wrapper"> 
+          <div id="mainCarousel" class="carousel slide">
+           
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="clauser 1.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p> We offer the pakage for you</p>
+                  <h5>Best Cleaning Service Provider <br> Home,Office, Garden</h5>
+                  <a href="" class="btn btn-theme-primary"> See All Services
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+                    
+                  </a>
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="clausor 2.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p> We offer the pakage for you</p>
+                  <h5>Best Cleaning Service Provider <br> Home,Office, Garden</h5>
+                  <a href="" class="btn btn-theme-primary"> See All Services
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+                  </a>
+                
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="clauser 3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <p> We offer the pakage for you</p>
+                  <h5>Best Cleaning Service Provider <br> Home,Office, Garden</h5>
+                  <a href="" class="btn btn-theme-primary"> See All Services 
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+                  </a>
+                
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="mainCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="mainCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-overlay">
+
+          </div>
+        </div>
+
+        <!-- timming card wrapper -->
+         <div class="timings-card-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="timing-card">
+                  <h3>Opening Hours</h3>
+                  <div class="triangle"></div>
+                  <div class="circle">
+                    <img src="time-past-sixty-svgrepo-com.svg" alt="">
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="timing-card">
+                  <h3>Find Location </h3>
+                  <div class="triangle"></div>
+                  <div class="circle">
+                    <img src="location-pin-svgrepo-com (1).svg" alt="">
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="timing-card">
+                  <h3>Find Cleaners</h3>
+                  <div class="triangle"></div>
+                  <div class="circle">
+                    <img src="cleaner-man-svgrepo-com.svg" alt="">
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+         </div>
+
+        <!-- main -->
+         <main class="main">
+          <section class="request-form py-5">
+            <div class="container">
+              <div class="req-form-inner p-4">
+                <h4>Send a request. Our fast expert cleaning team ready for your cleaning work</h4>
+                <hr>
+                <form class="row g-3">
+                  <div class="col-md-4 col-sm-12 col-lg-3">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" readonly class="form-control" id="name" placeholder="Name*">
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-lg-3">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="password" class="form-control" id="email" placeholder="Email*">
+                  </div>
+                  <div class="col-md-4 col-sm-12 col-lg-3">
+                    <select class="form-control" aria-label="Default select example">
+                      <option selected>Select a service</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class=" col-md-12 col-sm-12 col-lg-3 ">
+                    <button type="submit" class="btn btn-theme-primary mb-3 w-100">Send youe request <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
+                    
+                  </div>
+                </form>
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f6ec33" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                 <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius maiores repellendus assumenda.</span>
+                
+                </p>
+
+              </div>
+            </div>
+          </section>  <!-- seectionform -->
+          <section class="features py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                 <div class="vedio-thumb-wrapper" >
+                  <img class="features-thumbnail"  src="thumbnailvedio.jpg" alt="">
+                  <div class="play-btn-wrapper" data-bs-toggle="modal" data-bs-target="#intro-vedio-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f00"  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                  </div>  <!-- play-btn-wrapper -->
+                  </div><!-- vedio-thumb-wrapper -->
+                </div>  <!-- col -->
+                <div class="col-sm-12 col-md-6">
+                 <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                 <div class="features-accordian">
+                  <div class="accordion" id="featuresAccordian">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button  ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                         <span class="ms-3">Monthly check your house & office</span>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="featuresAccordian">
+                        <div class="accordion-body">
+                          
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non sint praesentium dicta amet libero fugiat dolores illo magni repellendus maiores, animi, odio asperiores ea sapiente suscipit sunt ullam recusandae illum!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed  ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                         <span class="ms-3">Lorem ipsum dolor sit amet consectetur.</span>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="featuresAccordian">
+                        <div class="accordion-body">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus distinctio voluptate aperiam quibusdam quidem quisquam aspernatur. Ullam consequatur maxime reprehenderit quos iste? Dicta, nam. Eligendi maiores voluptas ratione quae?</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                          <span class="ms-3">Lorem ipsum dolor sit amet consectetur.</span>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="featuresAccordian">
+                        <div class="accordion-body">
+                          
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ex maxime harum quae, vero consectetur quo, sit, amet autem modi expedita excepturi assumenda delectus. Placeat quisquam officiis esse! Inventore, earum.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed  ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                         <span class="ms-3">Lorem ipsum dolor sit amet consectetur.</span>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="featuresAccordian">
+                        <div class="accordion-body">
+                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae dolor accusantium in voluptatibus commodi culpa, dolorem voluptate quia vel sunt est nihil voluptatem iusto expedita nemo vero nisi eligendi quibusdam?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-btns mt-5">
+                    <a href="" class="btn btn-theme-primary">
+                      <span>About more</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM297 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L120 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l214.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L409 239c9.4 9.4 9.4 24.6 0 33.9L297 385z"/></svg>
+                     </a>
+                     <span class="ms-4 sign">Ali Abdullah</span>
+                  </div><!--features-btns -->
+                 </div> <!--features-accordian -->
+                 
+                 
+                </div>  <!-- col -->
+              </div><!-- row -->
+            </div> <!-- contaioner -->
+
+
+
+
+     <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 
+                </div>
+                <div class="carousel-item">
+                  
+                </div>
+                <div class="carousel-item">
+                
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            
+          </section>  <!--section.features -->
+
+           <section class="services py-5">
+            <div class="leading-text mb-5">
+              <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eos!</p>
+            </div>
+            
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="home-1-svgrepo-com (3).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="buildings-1-svgrepo-com (5).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="cleaning.svg.svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                  </div> <!-- row -->
+                  
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="home-1-svgrepo-com (3).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="buildings-1-svgrepo-com (5).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="cleaning.svg.svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                  </div> <!-- row -->
+                 
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="home-1-svgrepo-com (3).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="buildings-1-svgrepo-com (5).svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                    <div class="col-md-4 mb-3">
+                      <div class="service-card">
+                        <div class="icon-wrapper">
+                          <img src="cleaning.svg.svg" alt="">
+                        </div>  <!--  icon-wrapper -->
+                        <div class="card-detail">
+                          <h3 class="mb -4">Lorem, ipsum dolor.</h3>
+                        <p class="mb -4"></p>>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, consequatur!</p>
+                        <a href="">Read more</a>
+                        </div> <!-- card-detail -->
+                      </div>  <!--service-card" -->
+                    </div> <!-- col-md-4 -->
+                  </div> <!-- row -->
+                </div>
+              </div>
+             
+            </div>
+
+            </section> <!--section services -->
+
+               <section class="how-we-work py-5">
+                <div class="leading-text mb-5">
+                  <h3>How we work as a cleaning.</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eos!</p>
+                </div><!-- leading-text -->
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3 p-0 mb-3">
+                          <div class="work-card">
+                            <div class="icon-circle">
+                              <img src="calendar-svgrepo-com.svg" alt="">
+                              <div class="icon-circle-hover">
+                               
+
+                              </div> <!-- .icon-circle-hover -->
+                            </div> <!-- .icon-circle -->
+                            
+                            <h4>Booking online or offline.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, animi!</p>
+                            <div class="border-dot">
+
+                            </div>  <!-- border-dot -->
+                          </div>  <!--"work-card -->
+                      </div> <!-- col-md-3 -->
+                      <div class="col-md-3  p-0 mb-3">
+                        <div class="work-card">
+                          <div class="icon-circle">
+                            <img src="envelop-svgrepo-com.svg" alt="">
+                            <div class="icon-circle-hover">
+
+                            </div> <!-- .icon-circle-hover -->
+
+                          </div> <!-- .icon-circle -->
+                          <h4>Booking online or offline.</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, animi!</p>
+                          <div class="border-dot">
+
+                          </div>  <!-- border-dot -->
+                        </div>  <!--"work-card -->
+                    </div> <!-- col-md-3 -->
+                    <div class="col-md-3  p-0 mb-3">
+                      <div class="work-card">
+                        <div class="icon-circle">
+                          <img src="home-1-svgrepo-com (3).svg" alt="">
+                          <div class="icon-circle-hover">
+
+                          </div> <!-- .icon-circle-hover -->
+
+                        </div> <!-- .icon-circle -->
+                        <h4>Booking online or offline.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, animi!</p>
+                        <div class="border-dot">
+
+                        </div>  <!-- border-dot -->
+                      </div>  <!--"work-card -->
+                  </div> <!-- col-md-3 -->
+                  <div class="col-md-3  p-0 mb-3">
+                    <div class="work-card">
+                      <div class="icon-circle">
+                        <img src="emoji-smile-svgrepo-com.svg" alt="">
+                        <div class="icon-circle-hover">
+
+                        </div> <!-- .icon-circle-hover -->
+
+                      </div> <!-- .icon-circle -->
+                      <h4>Booking online or offline.</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, animi!</p>
+                      <div class="border-dot">
+
+                      </div>  <!-- border-dot -->
+                    </div>  <!--"work-card -->
+                </div> <!-- col-md-3 -->
+                      
+                      
+                    </div><!-- row -->
+                    </div> <!-- container -->
+
+                    
+
+
+
+
+               </section>
+               <section class="estimate py-5">
+                <div class="container">
+                 <div class="estimate-inner d-flex justify-content-between  align-items-center">
+                  <div class="estimate-text">
+                    <h4>Get a Free Estimate</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, facere!</p>
+  
+                   </div><!--estimate-text -->
+                  <div class="estimate-btn"> 
+                    <a href="" class="btn btn-theme-primary">See all services</a>
+                  </div> <!-- estimate-btn -->
+          
+                 </div><!-- estimate-inner -->
+               </div> <!-- container -->
+               </section>  <!-- estimate -->
+
+               <!-- Modal -->
+<div class="modal fade" id="intro-vedio-modal" tabindex="-1" aria-labelledby="introVedioModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <iframe src="https://www.youtube.com/embed/n26uqqY01Pg?si=mF1WLf1ZeO9XpMoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    
+    </div>
+  </div>
+</div>
+         </main>
+         <!-- footer -->
+         <footer class="footer">
+
+         </footer>
+
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
